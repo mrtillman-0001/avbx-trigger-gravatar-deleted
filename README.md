@@ -48,4 +48,4 @@ $ npm run deploy
 
 ## License
 
-[MIT](https://github.com/mrtillman-0001/avbx-trigger-gravatar-deleted/blob/main/LICENSE)
+[MIT](https://github.com/mrtillman-0001/avbx-trigger-gravatar-deleted/blob/master/LICENSE)
