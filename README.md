@@ -8,16 +8,11 @@ This function responds to delete operations triggered by the [DynamoDB TTL](http
 
 ## Checklist
 
-1. RDS database
-    - see [gravatar.users](https://github.com/mrtillman/avatarbox.sdk/blob/master/gravatar.users.sql)
-2. AWS Secrets Manager secret named `admin/mysql`
-    - type: Credentials for RDS database
-4. AWS Lambda function named `avbx-trigger-gravatar-deleted`
+1. AWS Lambda function named `avbx-trigger-gravatar-deleted`
     - Timeout: 10 seconds
     - must have IAM role assigned that includes:
       - `AWSLambdaBasicExecutionRole`
       - `AWSLambdaDynamoDBExecutionRole`
-      - `SecretsManagerReadWrite`
       - `AWSLambdaVPCAccessExecutionRole`
       - `AmazonS3FullAccess`
 
